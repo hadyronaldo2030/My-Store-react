@@ -1,0 +1,267 @@
+/* =============== */
+/*   Card Products  */
+/* =============== */
+/* .swiper {
+    padding: 5px 0 !important;
+} */
+.card_products {
+    position: relative;
+    border-radius: 7px;
+    display: flex;
+    min-width: 180px;
+    max-width: 230px;
+    height: 290px;
+    /* border: 1px solid var(--border); */
+    padding: 10px 12px;
+    margin: 0;
+    font-family: system-ui;
+    transition: all .5s;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: all 0.4s ease;
+    background: var(--component);
+    /* box-shadow: inset 6px -2px 11px var(--shadow); */
+}
+
+/* .card_products::after {
+    content: "";
+    position: absolute;
+    bottom: -2px;
+    right: -2px;
+    border-top-right-radius: 7px;
+    border-end-end-radius: 7px;
+    border-top: 2px solid var(--border-orange);
+    border-bottom: 2px solid var(--border-orange);
+    border-right: 2px solid var(--border-orange);
+    width: 120px;
+    height: 60px;
+    z-index: -1;
+}
+
+.card_products::before {
+    content: "";
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    border-top-left-radius: 7px;
+    border-bottom-left-radius: 7px;
+    border-top: 2px solid var(--border-orange);
+    border-left: 2px solid var(--border-orange);
+    width: 120px;
+    height: 60px;
+    z-index: -1;
+} */
+
+/* card details */
+.card_products .card_details {
+    display: inline-block;
+}
+
+/* image */
+.card_products .card_img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 0 10px 0;
+}
+
+.card_products .card_img img {
+    width: auto;
+    height: 115px;
+}
+
+/* title img */
+.card_products .title_card {
+    text-align: center;
+    text-wrap: nowrap;
+    margin: 10px auto;
+    /* font-family: Poppins; */
+    color: var(--light-dark);
+}
+
+/* rating */
+.card_products .rating {
+    width: 100px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+}
+
+/* price discount */
+.card_products .price_discount {
+    padding: 5px 0 !important;
+    display: flex;
+    justify-content: center;
+    margin-bottom: -65px;
+}
+
+/* button card */
+.card_products .button_card {
+    display: flex;
+    justify-content: space-between;
+}
+
+.card_products .button_card button {
+    color: var(--light-dark);
+    border: 1px solid var(--border);
+    border-radius: 5px !important;
+    padding: 4px 8px;
+    font-size: 16px;
+    font-weight: 300;
+    transition: all 0.5s ease;
+}
+
+.button_card button:hover {
+    background: var(--orange-dark) !important;
+    color: #ffffff !important;
+}
+
+.button_card .add_to_wishlist {
+    color: var(--light-dark);
+    background: transparent;
+}
+
+/* media */
+@media (min-width: 1400px) {
+    .card_products .top_products .card_col {
+        max-width: 20%;
+    }
+}
+
+/* ========================== */
+/*   Card products Landscape  */
+/* ========================== */
+.card_products_Landscape {
+    position: relative;
+    background: var(--component);
+    box-shadow: inset 6px -2px 11px var(--shadow);
+    border-radius: 7px;
+    display: flex;
+    min-width: 260px;
+    max-width: 300px;
+    height: 120px;
+    padding: 10px;
+    margin: 0;
+    font-family: system-ui;
+    transition: all .5s;
+    flex-direction: row;
+    align-items: center;
+    transition: all 0.4s ease;
+}
+
+.card_products_Landscape::after {
+    content: "";
+    position: absolute;
+    bottom: -1px;
+    right: -1px;
+    border-top-right-radius: 7px;
+    border-end-end-radius: 7px;
+    border-top: 1px solid var(--border-orange);
+    border-bottom: 1px solid var(--border-orange);
+    border-right: 1px solid var(--border-orange);
+    width: 120px;
+    height: 60px;
+    z-index: -1;
+}
+
+.card_products_Landscape::before {
+    content: "";
+    position: absolute;
+    top: -1px;
+    left: -1px;
+    border-top-left-radius: 7px;
+    border-bottom-left-radius: 7px;
+    border-top: 1px solid var(--border-orange);
+    border-left: 1px solid var(--border-orange);
+    border-bottom: 1px solid var(--border-orange);
+    width: 120px;
+    height: 60px;
+    z-index: -1;
+}
+
+/* card details */
+.card_products_Landscape .card_details {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+/* image */
+.card_products_Landscape .card_img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 108px;
+}
+
+.card_products_Landscape .card_img img {
+    width: 100%;
+    max-width: 90px;
+    max-height: 100px;
+    height: auto;
+}
+
+/* title img */
+.card_products_Landscape .title_card {
+    text-align: center;
+    text-wrap: nowrap;
+    padding-bottom: 5px;
+    font-size: 14px;
+    color: var(--light-dark);
+}
+
+/* rating */
+.card_products_Landscape .rating {
+    width: 90px;
+    padding-bottom: 5px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.card_products_Landscape .rating i {
+    font-size: 14px;
+}
+
+/* price discount */
+.card_products_Landscape .price_discount {
+    padding-bottom: 5px !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* button card */
+.card_products_Landscape .button_card {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    gap: 20px;
+}
+
+.card_products_Landscape .button_card button {
+    color: var(--light-dark);
+    border: 1px solid var(--border);
+    border-radius: 5px !important;
+    padding: 4px 8px;
+    font-size: 14px;
+    font-weight: 300;
+    transition: all 0.5s ease;
+}
+
+.button_card button:hover {
+    background: var(--orange-dark);
+    color: #ffffff !important;
+}
+
+.button_card .add_to_wishlist {
+    color: var(--light-dark);
+    background: transparent;
+}
+
+/* media */
+@media (min-width: 1400px) {
+    .card_products_Landscape .top_products .card_col {
+        max-width: 20%;
+    }
+}

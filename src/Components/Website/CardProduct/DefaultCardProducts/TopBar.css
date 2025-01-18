@@ -1,0 +1,27 @@
+.top_bar_filter {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid var(--border);
+    color: var(--light-dark);
+    border-radius: 7px;
+    padding: 8px 15px;
+    margin-bottom: 15px;
+}
+
+select {
+    background: none;
+    color: var(--light-dark);
+    border: 1px solid var(--border);
+    border-radius: 5px;
+}
+
+.top_bar_filter .side_filter {
+    display: flex;
+    color: var(--light-dark);
+    align-items: center;
+}
+
+button {
+    color: var(--light-dark);
+}

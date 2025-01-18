@@ -1,0 +1,282 @@
+/* =============== */
+/*  single product */
+/* =============== */
+.single_product {
+  font-family: Ebrima;
+  font-family: Cairo, Ebrima;
+
+}
+
+.single_product .box_Img {
+  position: relative;
+  background: var(--component);
+  /* box-shadow: inset 6px -2px 11px var(--shadow); */
+  border-radius: 7px;
+  height: auto;
+}
+
+/* title */
+.single_product h2 {
+  font-family: Cairo, Poppins;
+  font-weight: bold;
+  color: var(--light-dark);
+  margin: 0;
+}
+/* title category */
+.single_product .category-link {
+  color: var(--border);
+  font-weight: 700;
+}
+/* price */
+.single_product .price_discount {
+  margin-top: 10px;
+  height: 35px;
+  display: flex;
+  align-items: center;
+}
+
+/* new price */
+.single_product .new_price {
+  font-size: 22px;
+  font-weight: bold;
+  color: var(--light-dark);
+}
+
+/* Percent */
+.single_product .discount_percent {
+  position: absolute;
+  top: 30px;
+  right: 20px;
+  padding: 2px 5px;
+  background: #6b6b6b24;
+  border-radius: 3px;
+  background: rgba(195, 4, 4, 0.778);
+  color: #EEE;
+  font-weight: 500;
+}
+
+/* new price */
+.single_product .old_price {
+  font-weight: 600;
+  font-size: 18px;
+  text-decoration: line-through;
+  color: #B6BCC8;
+}
+
+/* Description */
+.single_product h4 {
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--light-dark);
+}
+
+.single_product .description p {
+  font-size: 16px;
+    color: var(--p);
+    letter-spacing: .4px;
+}
+
+/* size */
+.size span {
+  display: inline-flex;
+  min-width: 35px;
+  height: 35px;
+  border-radius: 7px;
+  padding: 10px;
+  margin-right: 10px;
+  font-weight: bold;
+  background: #6b6b6b24;
+  color: var(--light-dark);
+  align-items: center;
+  justify-content: center;
+  transition: all .5s ease;
+}
+
+.size span:hover {
+  background: #17181C;
+  color: #FFFFFF;
+}
+
+/* color */
+.colors span {
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+  border-radius: 7px;
+  display: inline-block;
+}
+
+.colors .color_orange {
+  background: var(--color-orange);
+}
+
+.colors .color_gray {
+  background: #2B2B2A;
+}
+
+.colors .color_blue {
+  background: #005694;
+}
+
+/* Quantity */
+.quantity {
+  width: 135px;
+  border-radius: 7px;
+  background: #6b6b6b24;
+}
+
+.quantity button {
+  font-weight: bold;
+  color: var(--color-orange);
+  width: 36px;
+}
+
+.quantity input {
+  color: var(--light-dark);
+  background: transparent;
+  width: 34% !important;
+  border: none;
+  outline: none !important;
+  text-align: center;
+  margin-left: 7px;
+  padding: 0;
+}
+
+
+/* image gallery */
+/* big image */
+.image-gallery-slide-wrapper {
+  background: var(--component);
+  /* box-shadow: inset 6px -2px 11px var(--shadow); */
+  border-radius: 7px;
+  padding: 15px;
+  margin: 0;
+  height: 71vh;
+}
+
+.image-gallery-slide-wrapper img {
+  object-fit: cover !important;
+  max-height: 60vh !important;
+  width: auto !important;
+}
+
+.horizontal .image-gallery-thumbnails-wrapper.thumbnails-swipe-horizontal {
+  background: var(--component);
+  margin-top: 10px;
+  border-radius: 7px;
+  display: flex;
+  padding: 0 7px;
+}
+
+.image-gallery-swipe {
+  display: flex;
+  align-items: center;
+  height: 90%;
+}
+
+/* small image  */
+.single_product nav {
+  background: transparent !important;
+  height: 100%;
+  width: 100%;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  font-family: 'Sansita Swashed', cursive;
+  transition: all 1s ease;
+}
+
+.single_product nav button:last-child {
+  margin-bottom: 0;
+}
+
+.single_product nav button {
+  background: var(--component);
+  /* box-shadow: inset 6px -2px 11px var(--shadow); */
+  padding: 5px !important;
+  margin-bottom: 10px;
+  border-radius: 7px;
+  height: 90px;
+  width: 95px;
+}
+
+.image-gallery-thumbnail .image-gallery-thumbnail-image {
+  width: 65% !important;
+}
+
+/* active & hover  */
+.image-gallery-thumbnail.active,
+.image-gallery-thumbnail:focus {
+  border: 2px solid var(--color-orange);
+}
+
+.image-gallery-thumbnail:hover {
+  border: 2px solid var(--color-orange);
+}
+
+/* button add to cart & wishlist */
+.single_product .button_card {
+  background: var(--component);
+  /* box-shadow: inset 6px -2px 11px var(--shadow); */
+  padding: 5px 20px !important;
+  margin-top: 15px;
+  border-radius: 7px;
+  height: 60px;
+  display: flex !important;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.single_product .button_card button {
+  padding: 5px 10px;
+  border-radius: 5px;
+  border: 1px solid var(--border);
+  color: var(--light-dark);
+  transition: all .5s ease;
+}
+
+.single_product button:hover {
+  background: var(--color-orange) !important;
+  color: #ffffff !important;
+}
+
+/* 
+.single_product .add_to_cart {
+  background: var(--orange-dark);
+  color: #ffffff;
+} */
+
+/* 
+.single_product .add_to_wishlist {
+  color: var(--light-dark);
+  background: transparent;
+} */
+
+
+/* Custom Scroll */
+::-webkit-scrollbar {
+  width: 5px;
+  margin-right: 20px;
+  z-index: 2000000
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+  transition: all 1s ease !important;
+  z-index: 2000000
+}
+
+::-webkit-scrollbar-thumb {
+  background: #17181c00;
+  border-radius: 50px;
+  min-height: 250px;
+  transition: all 1s ease !important;
+  z-index: 2000000
+}
+
+.single_product nav:hover::-webkit-scrollbar-thumb {
+  background: var(--color-orange);
+}
+
+.single_product nav:hover::-webkit-scrollbar-track {
+  background: #2c20200a;
+}

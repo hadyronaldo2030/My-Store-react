@@ -1,0 +1,131 @@
+/* privacy header */
+.profile-header {
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+    height: 130px;
+    margin-top: -2px;
+    color: #ffffff;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url("../../../Asstes/Images/Home/cover.jpg");
+}
+
+/* .profile-header::after {
+    content: "";
+    position: absolute;
+    top: -1870px;
+    left: auto;
+    right: auto;
+    border-radius: 50%;
+    background-color: #17181c;
+    width: 5859px;
+    height: 1987px;
+    z-index: -1;
+
+} */
+.img_user {
+    background-color: #ddd;
+    box-shadow: 0 4px 8px rgb(0 0 0 / 17%);
+    color: #000;
+    border-radius: 50%;
+    height: 120px;
+    width: 120px;
+    text-transform: uppercase;
+    margin-top: -36px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* profile container */
+.profile-container {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.cover-photo {
+    width: 100%;
+    height: 150px;
+    background: url("https://via.placeholder.com/600x150") center/cover no-repeat;
+    border-radius: 8px 8px 0 0;
+}
+
+.profile-photo-container {
+    margin-top: -50px;
+}
+
+.profile-photo {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 4px solid #fff;
+    background-color: #eee;
+}
+
+.profile-name {
+    margin-top: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+}
+
+.tabs {
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+.tab {
+    padding: 8px 20px;
+    margin: 0 5px;
+    border: none;
+    background-color: #f0f0f0;
+    color: #666;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.tab.active {
+    background-color: #ffc107;
+    color: #fff;
+}
+
+.profile-form {
+    margin-top: 20px;
+    text-align: left;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-control {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #fff;
+}
+
+.save-button {
+    width: 100%;
+    padding: 10px;
+    background-color: #000;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.save-button:hover {
+    background-color: #333;
+}

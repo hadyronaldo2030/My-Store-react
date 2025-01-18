@@ -1,0 +1,118 @@
+import { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
+import { Axios } from "../../../API/axios";
+import { Cat , CAT } from "../../../API/Api";
+import TableShow from "../../../Components/Dashboard/Table";
+import { Form } from "react-bootstrap";
+
+export default function Categories() {
+    // get Categories
+    const [catgories, setCatgories] = useState([]);
+    // عرض البيانات فى صفحات متعدده على حسب حجم البيانات
+    const [page, setPage] = useState(1);
+    // تحديد عدد الصفوف التى نظهرها بطريقه الفرونت
+    const [limit, setLimit] = useState(6);
+    // تأخير ارسال البيانات فى مرحلة البحث عن طريق الباك
+    const [search, setSearch] = useState("");
+    // اجمالى البيانات الموجودة فى الجدول
+    const [total, setTotal] = useState(0);
+    // Loading
+    const [loading, setLoading] = useState(false);
+
+    // get all categories
+    useEffect(() => {
+        setLoading(true);
+        // طريقة الباجينشين بالباك 1
+        Axios.get(`/${CAT}?limit=${limit}&page=${page}`)
+            .then((data) => {
+                setCatgories(data.data.data);
+                setTotal(data.data.total);
+            })
+            .catch((err) => console.log(err))
+            // اخفاء التحميل بعد جلب البيانات
+            .finally(() => setLoading(false));
+            // ملء المصفوفه لتعمل فى كل مرة على استدعاء البيانات
+    }, [limit, page]);
+
+    // header table users
+    const header = [
+        {
+            // ال key بتيجى من الباك اند
+            key: 'title',
+            name: 'Title',
+        },
+        {
+            key: 'image',
+            name: 'Image',
+        },
+        {
+            key: 'created_at',
+            name: 'Created',
+        },
+        {
+            key: 'updated_at',
+            name: 'Updated',
+        }
+    ]
+    // handel Delete
+    async function handelDelete(id) {
+        try {
+            // ايقاف زر الحذف للمستخدم المسجل فى الجلسه
+            const res = await Axios.delete(`${Cat}/${id}`);
+            // هذا الفلتر يقوم بالحذف بدون عمل اعادة تحديث للصفحة
+            setCatgories((prev) => prev.filter((item) => item.id !== id));
+        } catch (err) {
+            console.log(err);
+        }
+    }
+
+
+    // handel Search backend
+    async function getSearchData() {
+        try {
+            // ايقاف زر الحذف للمستخدم المسجل فى الجلسه
+            const res = await Axios.post(`${Cat}/search?rirle=${search}`);
+            console.log(res)
+        } catch (err) {
+            console.log(err);
+        }
+    }
+    // هذا الافيكت يقوم بتأخير جلب البيانات لان عند الكتابه يرسل الكثير من البيانات وهذا حمل كبير
+    useEffect(() => {
+        const debounce = setTimeout(() => {
+            getSearchData();
+        }, 800);
+        return () => clearTimeout(debounce);
+    }, [search]);
+    // =====================================
+    return (
+        <div className="bg-white p-2 w-100">
+            <div className="d-flex justify-content-between align-items-center">
+                <h3>Categories Page</h3>
+                <Link className="btn btn-sm btn-primary" to={"/dashboard/category/add"}>Add Category</Link>
+            </div>
+            <div className="col-3">
+                <Form.Control
+                className="my-2"
+                type="text"
+                placeholder="search backend"
+                aria-label="input example"
+                value={search}
+                onChange={(e) => setSearch(e.target.value)}
+                />
+            </div>
+            <TableShow 
+            limit={limit}
+            setLimit={setLimit}
+            page={page}
+            setPage={setPage}
+            header={header}
+            data={catgories}
+            delete={handelDelete}
+            loading={loading}
+            total={total}
+            search="title"
+            />
+        </div>
+    );
+}

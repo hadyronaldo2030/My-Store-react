@@ -1,0 +1,282 @@
+.auth {
+    height: 100vh;
+    overflow: hidden;
+    align-content: center;
+}
+
+/* right section */
+.right_section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 95vh;
+    border-radius: 7px;
+}
+
+.right_section img {
+    width: 60%;
+    max-width: 370px;
+    height: auto;
+}
+
+/* left section */
+.left_section {
+    max-width: 550px !important;
+    padding: 20px 0;
+    height: 90%;
+    overflow: auto;
+    font-family: Cairo;
+    max-width: 550px !important;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.left_section h2 {
+    margin-bottom: 5px;
+    font-size: 26px;
+    font-weight: 700;
+    color: var(--light-dark);
+}
+
+.left_section p {
+    font-size: 16px;
+    color: #707070;
+}
+
+.form_container {
+    width: 100%;
+    max-width: 400px;
+    margin: auto;
+}
+
+
+.custom-form {
+    width: 100%;
+}
+
+/* {{ input }} */
+.form-group-custom input {
+    padding: 10px;
+    margin-bottom: 20px;
+    outline: none;
+    font-size: 16px;
+    width: 100%;
+    background: transparent;
+    font-family: 'lato';
+    border: 2px solid #70707078;
+    border-radius: 7px;
+}
+
+.form-group-custom input:focus {
+    background: var(--component);
+}
+
+.form-group-custom input:focus:valid {
+    border-bottom: 1px solid rgb(39, 147, 39);
+}
+
+.form-group-custom input:focus:not(:valid) {
+    border-bottom: 1px solid rgb(255, 86, 24);
+}
+
+.custom_form input:placeholder-shown+.form-group-custom label {
+    opacity: 0;
+    visibility: hidden;
+    top: 20px;
+}
+
+.form-group-custom label {
+    position: absolute;
+    top: -20px;
+    left: 0px;
+    font: size 13px;
+    font-weight: bold;
+    color: gray;
+    transition: all .5s ease-in-out;
+}
+
+/* {{ show password }} */
+.password-container {
+    position: relative;
+}
+
+.password-input {
+    width: 100%;
+    padding: 10px 40px 10px 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.toggle-password {
+    position: absolute;
+    top: 35%;
+    right: 20px;
+    transform: translateY(-50%);
+    background: none;
+    cursor: pointer;
+    outline: none;
+}
+
+.toggle-password i {
+    font-size: 18px;
+    color: #666;
+}
+
+.toggle-password i:hover {
+    color: #333;
+}
+
+/*{{ remember me }} */
+.remember-me {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14px;
+    color: #707070;
+}
+
+/* remember me lable */
+.remember-me label {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+/* remember me input */
+.remember-me input {
+    height: 15px;
+    width: 15px;
+}
+
+/* remember me link */
+.remember-me a {
+    color: var(--bs-blue);
+}
+
+/* {{ button login }} */
+
+/* main button */
+.login-btn {
+    background: rgb(255, 228, 167);
+    background: linear-gradient(50deg, rgba(255, 228, 167, 1) 10%, rgba(242, 175, 18, 1) 50%, rgba(255, 228, 167, 1) 90%);
+    border: none;
+    padding: 10px 20px;
+    color: white;
+    font-weight: bold;
+    width: 100%;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 1rem;
+}
+
+.login-btn:hover {
+    opacity: 0.9;
+}
+
+/* link register & login */
+.Dont_have_account {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 15px 0;
+    color: #707070;
+    font-size: 16px;
+    font-weight: 500;
+    gap: 5px;
+}
+
+.link_log_reg {
+    color: var(--bs-blue);
+}
+
+/* {{ social-buttons }} */
+
+/* title login register */
+.title_reg_login {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0;
+    gap: 10px;
+    font-size: 18px;
+    color: #707070;
+    padding-top: 15px;
+}
+
+.title_reg_login::after,
+.title_reg_login::before {
+    content: "";
+    display: block;
+    height: 1.5px;
+    width: 30%;
+    background: #707070b6;
+}
+
+/* main social button */
+.social-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.social-buttons a {
+    display: inline-flex;
+    padding: 10px 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    color: #333;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+    gap: 10px;
+}
+
+.social-buttons img {
+    width: 25px;
+    height: 25px;
+}
+
+.social-buttons a:hover {
+    background-color: #f5f5f5;
+}
+
+/* verify code */
+.resend-code {
+    margin-bottom: 1em;
+    font-size: 0.9em;
+    text-align: center;
+}
+
+.resend-code button {
+    background: none;
+    color: var(--primary);
+    border: none;
+    cursor: pointer;
+    font-size: 1em;
+    text-decoration: underline;
+    transition: color 0.3s ease;
+}
+
+.resend-code button:disabled {
+    color: gray;
+    cursor: not-allowed;
+}
+
+.resend-code button:hover:enabled {
+    color: darkblue;
+}
+
+
+
+@media (max-width: 770px) {
+    .right_section {
+        display: none;
+    }
+
+    .auth {
+        height: 100vh;
+    }
+}

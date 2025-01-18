@@ -1,0 +1,30 @@
+.container .imgError {
+  width: 420px;
+  animation-name: float;
+  animation: float 2s infinite;
+}
+@keyframes float {
+      0% {
+        transform: translateY(0);
+      }
+      50% {
+        transform: translateY(-10px);
+      }
+      100% {
+        transform: translateY(0);
+      }
+    }
+
+
+.text {
+  display: flex;
+  padding: 40px 40px;
+  align-items: center;
+  flex-direction: column;
+}
+.text h1 {
+  color: #00c2cb;
+  font-size: 35px;
+  font-weight: 900;
+  margin-bottom: 15px;
+}

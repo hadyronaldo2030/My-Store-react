@@ -1,0 +1,42 @@
+/* =============== */
+/*   Card Products  */
+/* =============== */
+.offer_side_slider {
+    position: relative;
+    border-radius: 7px;
+    background: var(--component);
+    box-shadow: inset 6px -2px 11px #eeeeee00;
+    height: 380px;
+    padding: 0px;
+    margin: 0;
+    transition: all .5s;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+
+    background-image: url("../../../Asstes/Images/Home/laptop.jpg");
+    border-radius: 15px;
+    font-family: Segoe UI;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    overflow: hidden;
+}
+/* image */
+
+/* card details */
+.offer_side_slider .offer_details {
+    color: var(--light-dark);
+    font-family: Segoe UI;
+}
+
+.offer_side_slider .offer_details a {
+    margin: auto;
+    font-weight: 300;
+}
+
+.offer_side_slider .offer_details h4 {
+    color: #ffffff;
+    font-weight: 900;
+    padding-bottom: 20px;
+}

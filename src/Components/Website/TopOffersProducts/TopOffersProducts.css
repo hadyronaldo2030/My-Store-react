@@ -1,0 +1,42 @@
+/* =============== */
+/*   Card Products  */
+/* =============== */
+.offer_side {
+    position: relative;
+    border-radius: 7px;
+    background: var(--component);
+    box-shadow: 0px 3px 6px #00000059;
+    overflow-x: hidden;
+    height: 290px;
+    padding: 0px 20px;
+    margin: 0;
+    font-family: system-ui;
+    transition: all .5s;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+/* image */
+.offer_side img{
+    max-height: 250px;
+    width: auto;
+    float: right;
+}
+/* card details */
+.offer_side .offer_details {
+    color: var(--light-dark);
+    font-family: Segoe UI;
+}
+
+.offer_side .offer_details h6 {
+    font-weight: 300;
+}
+
+.offer_side .offer_details h4,
+.offer_side .offer_details span {
+    font-weight: 100;
+}
+
+.offer_side .offer_details h2 {
+    font-weight: 900;
+}

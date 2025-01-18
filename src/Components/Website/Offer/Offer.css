@@ -1,0 +1,197 @@
+/* =============== */
+/*   Offer 1 Item  */
+/* =============== */
+.Offer_1_Item .offer_1 {
+    position: relative;
+    height: 180px;
+    border-radius: 7px;
+    font-family: 'Segoe UI';
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    box-shadow: 0px 3px 9px 0px #0303031a;
+    background-image: url("../../../Asstes/Images/Home/offer_1.jpg");
+}
+
+/* text offer */
+.Offer_1_Item .card_Offer {
+    overflow: hidden;
+    transition: all 1s;
+    padding: 20px;
+    margin: auto 0;
+    height: 160px;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* Hover offer */
+.Offer_1_Item .card_Offer:hover {
+    background-size: 110%;
+}
+
+.text_offers h1,
+.text_offers span h2,
+.text_offers span h4 {
+    font-weight: bold !important;
+    color: #BED64A !important;
+    font-family: poppins;
+    margin: 0;
+}
+
+.text_offers h1 {
+    font-family: poppins;
+    font-size: 68px !important;
+    margin: 0;
+}
+
+.right_text h4 {
+    color: #ECE9E9;
+}
+
+.right_text h2 {
+    font-family: poppins !important;
+    font-weight: 700;
+}
+
+.right_text a {
+    color: #2A9CF5 !important;
+}
+
+/* image */
+.image_floting {
+    position: absolute;
+    bottom: -20px;
+    right: 20px;
+    width: 30%;
+    height: auto;
+}
+
+.image_floting img {
+    width: 100%;
+}
+
+/* =============== */
+/*   Offer 2 Item  */
+/* =============== */
+.Offer_3_Item .offer_1,
+.Offer_3_Item .offer_2,
+.Offer_3_Item .offer_3 {
+    height: 160px;
+    border-radius: 7px;
+    font-family: 'Segoe UI';
+    background-size: cover;
+    background-repeat: no-repeat;
+    box-shadow: 0px 3px 9px 0px #0303031a;
+    background-position: center;
+    overflow: hidden;
+}
+
+.Offer_3_Item .offer_1 {
+    background-image: url("../../../Asstes/Images/Home/dgt3_img_2_1.png");
+}
+
+.Offer_3_Item .offer_2 {
+    background-image: url("../../../Asstes/Images/Home/1_e1.jpg");
+}
+
+.Offer_3_Item .offer_3 {
+    background-image: url("../../../Asstes/Images/Home/dgt3_img_4_1.png");
+}
+
+/* text offer */
+.Offer_3_Item .card_Offer {
+    overflow: hidden;
+    transition: all 1s;
+    padding: 20px;
+}
+
+/* Hover offer */
+.card_Offer:hover {
+    background-size: 110%;
+}
+
+.card_Offer h4 {
+    font-family: eprima;
+    font-size: 18px;
+    font-weight: 100;
+    color: #ffffff;
+}
+
+.card_Offer span {
+    font-family: poppins;
+    font-size: 20px;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+/* =============== */
+/*   Offer 3 Item  */
+/* =============== */
+.Offer_2_Item .offer_1,
+.Offer_2_Item .offer_2,
+.Offer_2_Item .offer_3,
+.Offer_2_Item .offer_4 {
+    height: 150px;
+    border-radius: 7px;
+    font-family: Segoe UI;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    box-shadow: 0px 3px 9px 0px #0303031a;
+    overflow: hidden;
+}
+
+.Offer_2_Item .offer_1 {
+    background-image: url("../../../Asstes/Images/Home/offer-1.jpg");
+}
+
+.Offer_2_Item .offer_2 {
+    background-image: url("../../../Asstes/Images/Home/offer-2.jpg");
+}
+
+.Offer_2_Item .offer_3 {
+    background-image: url("../../../Asstes/Images/Home/dgt3_img_5.png");
+}
+
+.Offer_2_Item .offer_4 {
+    background-image: url("../../../Asstes/Images/Home/dgt3_img_6.png");
+}
+
+.Offer_2_Item .card_Offer {
+    overflow: hidden;
+    transition: all 1s;
+    padding: 20px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.Offer_2_Item .card_Offer h4 {
+    font-size: 18px;
+    font-weight: 400;
+    font-family: Segoe UI;
+}
+
+.Offer_2_Item .card_Offer h2 {
+    font-family: Segoe UI;
+    font-weight: bold;
+    font-size: 24px;
+}
+
+
+/* ============================ */
+/*        Responsive          */
+/* ============================ */
+
+@media screen and (max-width: 550px) {
+    .Offer_1_Item .offer_1 {
+        height: auto;
+        display: flex;
+        flex-direction: column;
+    }
+
+}

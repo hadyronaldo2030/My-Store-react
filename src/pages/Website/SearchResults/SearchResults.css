@@ -1,0 +1,123 @@
+/* =============== */
+/*  Search Results */
+/* =============== */
+.card_products {
+  position: relative;
+  border-radius: 7px;
+  display: flex;
+  min-width: 180px;
+  height: 290px;
+  background: var(--component);
+  padding: 10px 12px;
+  margin: 0;
+  font-family: system-ui;
+  transition: all .5s;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.card_products::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  border-top-right-radius: 7px;
+  border-end-end-radius: 7px;
+  border-top: 1px solid var(--border-orange);
+  border-bottom: 1px solid var(--border-orange);
+  border-right: 1px solid var(--border-orange);
+  width: 60px;
+  height: 290px;
+  z-index: -1;
+}
+
+.card_products::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-top-left-radius: 7px;
+  border-bottom-left-radius: 7px;
+  border-top: 1px solid var(--border-orange);
+  border-left: 1px solid var(--border-orange);
+  border-bottom: 1px solid var(--border-orange);
+  width: 60px;
+  height: 290px;
+  z-index: -1;
+}
+
+/* card details */
+.card_products .card_details {
+  display: inline-block;
+}
+
+/* image */
+.card_products .card_img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 20px 0 10px 0;
+}
+
+.card_products .card_img img {
+  width: auto;
+  height: 100px;
+}
+
+/* title img */
+.card_products .title_card {
+  text-align: center;
+  text-wrap: nowrap;
+  margin: 10px auto;
+  /* font-family: Poppins; */
+  color: var(--light-dark);
+}
+
+/* rating */
+.card_products .rating {
+  width: 110px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* price discount */
+.card_products .price_discount {
+  padding: 5px 0 !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* button card */
+.card_products .button_card {
+  display: flex;
+  justify-content: space-between;
+}
+
+.card_products .button_card button {
+  color: var(--light-dark);
+  border: 1px solid var(--border);
+  border-radius: 5px !important;
+  padding: 4px 8px;
+  font-size: 16px;
+  font-weight: 300;
+  transition: all 0.5s ease;
+}
+
+.button_card button:hover {
+  background: var(--orange-dark) !important;
+  color: #ffffff !important;
+}
+
+.button_card .add_to_wishlist {
+  color: var(--light-dark);
+  background: transparent;
+}
+
+/* media */
+@media (min-width: 1400px) {
+  .card_products .top_products .card_col {
+      max-width: 20%;
+  }
+}
