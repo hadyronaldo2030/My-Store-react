@@ -1,4 +1,4 @@
-export const baseURL = 'https://ecommerce-production-860a.up.railway.app//api';
+export const baseURL = 'https://ecommerce-production-860a.up.railway.app/api';
 
 // Auth
 export const REGISTER = "register";
