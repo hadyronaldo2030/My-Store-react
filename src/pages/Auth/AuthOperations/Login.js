@@ -167,7 +167,7 @@ export default function Login() {
                                     <img src={img_facebook} alt="login with Facebook" />
                                     <span>Facebook</span>
                                 </Link>
-                                <Link to="http://127.0.0.1:8000/login-google">
+                                <Link to="https://ecommerce-production-860a.up.railway.app/login-google">
                                     <img src={img_google} alt="login with Google" />
                                     <span>Google</span>
                                 </Link>
