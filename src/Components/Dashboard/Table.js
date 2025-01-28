@@ -83,7 +83,7 @@ export default function TableShow(props) {
                 <td key={key2}>
                     {/* لو القيمة اللى جايه من الكرييت تساوى صورة اعرض الصورة فى الجدول */}
                     {item2.key === "image" ? (
-                        <img height={"30px"} src={"https://ecommerce-production-b11e.up.railway.app" + item[item2.key]} alt="" />
+                        <img height={"30px"} src={ "https://ecommerce-production-b11e.up.railway.app" + item[item2.key]} alt="" />
                     ) : item2.key === "images" ? (
                         <div className="d-flex justify-content-start align-items-center gap-2 flex-wrap">
                             {item[item2.key].map((img) => (
