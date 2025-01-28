@@ -144,7 +144,7 @@ export default function Header() {
                         </div>
                     </div>
                 )}
-                <div className="col overflow-hidden mt-4 mb-2">
+                <div className="col overflow-hidden mb-2">
                     <Swiper
                         modules={[Pagination, Autoplay, EffectCoverflow]}
                         effect="coverflow"

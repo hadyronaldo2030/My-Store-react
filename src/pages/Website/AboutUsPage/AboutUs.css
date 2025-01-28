@@ -114,11 +114,11 @@
 }
 
 /* Swiper Container */
-.swiper-container {
+.main .swiper-container {
   margin: 20px 0;
 }
 
-.swiper-slide {
+.main .swiper-slide {
   border: 1px solid var(--border);
   text-align: center;
   padding: 15px;
