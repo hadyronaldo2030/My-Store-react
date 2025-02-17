@@ -15,7 +15,7 @@ export default function CategoryOwl() {
         <Link to={`/sub-category/${category.id}`} className="item">
           <div className="imgBx">
             <img
-              src={category.image}
+              src={"https://ecommerce-production-b11e.up.railway.app/" + category.image}
               alt={category.title}
               style={{ width: '80px', height: '80px' }}
             />

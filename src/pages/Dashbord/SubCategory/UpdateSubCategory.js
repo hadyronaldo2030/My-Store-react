@@ -121,7 +121,7 @@ export default function UpdateSubCategory() {
             {/* Show current image */}
             {imageFromServer && (
                 <div className="mb-3">
-                    <img src={imageFromServer} alt="Current Subcategory" width="100" />
+                    <img src={"https://ecommerce-production-b11e.up.railway.app/" + imageFromServer} alt="Current Subcategory" width="100" />
                     <p>Current Image</p>
                 </div>
             )}

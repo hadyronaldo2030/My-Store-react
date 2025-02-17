@@ -144,13 +144,13 @@ export default function UpdateSubSubCategory() {
             {imageFromServer && !imageToUpload && (
                 <div className="mb-3">
                     <p>Current Image:</p>
-                    <img src={imageFromServer} alt="Current" width="100" />
+                    <img src={"https://ecommerce-production-b11e.up.railway.app/" + imageFromServer} alt="Current" width="100" />
                 </div>
             )}
             {imageToUpload && (
                 <div className="mb-3">
                     <p>Selected Image:</p>
-                    <img src={URL.createObjectURL(imageToUpload)} alt="Selected" width="100" />
+                    <img src={"https://ecommerce-production-b11e.up.railway.app/" + URL.createObjectURL(imageToUpload)} alt="Selected" width="100" />
                 </div>
             )}
 

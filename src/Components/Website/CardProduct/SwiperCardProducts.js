@@ -32,7 +32,7 @@ export default function Products(props) {
 
         <div className="card_products">
             <NavLink to={`/product/${props.id}`} className="card_img">
-                <img src={props.img} alt="offer" />
+                <img src={"https://ecommerce-production-b11e.up.railway.app/" + props.img} alt="offer" />
             </NavLink>
             <NavLink to={`/product/${props.id}`} className="card_details">
                 {props.sale && (

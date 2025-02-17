@@ -221,7 +221,7 @@ export default function UpdateProduct() {
         <div className="border p-2 w-100">
             <div className="d-flex justify-content-between align-items-center">
                 <div className="d-flex align-items-center justify-content-start gap-2" key={key}>
-                    <img src={URL.createObjectURL(img)} width="80px"></img>
+                    <img src={"https://ecommerce-production-b11e.up.railway.app/" + URL.createObjectURL(img)} width="80px"></img>
                     <div>
                         <p className="mb-1">{img.name}</p>
                         <p>

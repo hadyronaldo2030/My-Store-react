@@ -76,7 +76,7 @@ export default function SearchResults() {
                             return (
                                 <div key={product.id} className={isGridView ? "card_products col" : "card_products_Landscape col"}>
                                     <NavLink to={`/product/${product.id}`} className="card_img">
-                                        <img src={product.images[0].image} alt={product.title} />
+                                        <img src={"https://ecommerce-production-b11e.up.railway.app/" + product.images[0].image} alt={product.title} />
                                     </NavLink>
                                     <div className="d-flex flex-column w-100">
                                         <NavLink to={`/product/${product.id}`} className="card_details">
